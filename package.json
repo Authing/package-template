@@ -1,0 +1,53 @@
+{
+  "name": "@authing/xxx",
+  "version": "0.0.0",
+  "description": "Description of the package",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "lint": "eslint --max-warnings=0 src && prettier --check '*.{json,js}' 'src/**/*.{js,jsx,ts,tsx}'",
+    "test": "jest --coverage",
+    "prepare": "husky install",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.2",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@parcel/packager-ts": "^2.2.0",
+    "@parcel/transformer-typescript-types": "^2.2.0",
+    "@types/jest": "^27.4.0",
+    "@willin/eslint-config": "^0.0.6",
+    "conventional-changelog-cli": "^2.2.2",
+    "eslint": "^8.6.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "husky": "^7.0.4",
+    "jest": "^27.4.7",
+    "lint-staged": "^12.1.7",
+    "parcel": "^2.2.0",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Authing/lark.git"
+  },
+  "keywords": [
+    "lark",
+    "feishu",
+    "authing",
+    "sdk"
+  ],
+  "author": "Willin Wang <willin@willin.org> (https://willin.wang/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Authing/lark/issues"
+  },
+  "homepage": "https://github.com/Authing/lark#readme"
+}

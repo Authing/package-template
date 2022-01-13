@@ -1,5 +1,5 @@
-
 demo/
+.parcel-cache/
 /swagger-ui*
 globalConfig.json
 
